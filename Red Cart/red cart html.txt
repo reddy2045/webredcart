@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Red Cart - A modern and responsive ecommerce website for shopping online.">
+  <title>Red Cart Ecommerce Website Design</title>
+  <link rel="stylesheet" href="styel.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<header >
+  <!-- Your header content here -->
+
+ <div class="con" style=" background: radial-gradient(#fff, #fcd1d1);">
+      <div class="navbar">
+        <div class="logo">
+          <img src="GANESH_20250528_015651_0000-removebg-preview.png" alt="RedStore Logo" />
+        </div>
+        <nav style="margin-left: 400px;">
+          <ul id="menuitems">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Account</a></li>
+          </ul>
+        </nav>
+        <img src="cart_png-removebg-preview.png" class="cart-icon" alt="Cart" />
+        <img src="menu-removebg-preview.png" class="menu" onclick="menutoggle()" alt="Menu" />
+        <img src="">
+      </div>
+    
+    <section class="hero">
+      <div class="hero-text">
+        <h1 style="margin-left: 100px;">Give Your Workout<br>A New Style!</h1>
+        <p style="margin-left: 100px;">
+          Success isn't always about greatness. It's about consistency.
+          Consistent hard work gains success. Greatness will come.
+        </p>
+        <a href="#" class="btn" style="margin-left: 100px;">Explore Now →</a>
+      </div>
+      <div class="hero-img">
+        <img src="pt 1.png" 
+        style="width: 500px; height: 500px; margin-left: -40px; margin-bottom: 100px;">
+      </div>
+    </section>
+  </div>
+
+    </header>
+
+
+
+<main style="background-color: rgb(255, 255, 255);">
+ <!------ feature categories ------>
+ <div class="categories">
+    <div class="small-container">
+        <div class="row" style="background-color: white;">
+            <div class="col-3">
+                <img src="t shirt 2 jpeg.jpeg" alt="T-Shirt 2">
+            </div>
+            <div class="col-3">
+                <img src="t shirt 1.jpeg" alt="T-Shirt 1">
+            </div>
+            <div class="col-3">
+                <img src="t shirt 3.jpeg" alt="T-Shirt 3">
+            </div>
+            <div class="col-3">
+                <img src="THECLOTHINGFACTORY-09-02-249595_1667x.webp" style="height: 280px;">
+            </div>
+        </div>
+    </div>
+</div>
+<!-----feature products------>
+<div class="small-container">
+    <h1  class="title">Feature Products</h1>
+
+<div class="row">
+  <div class="col-4" style="transition: transform 0.5s;">
+    <img src="-original-imagudcghwwpcuu5.webp" alt="Nike Shoes" style="margin-top: -40;">
+    <h4>Nike Shoes</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+    <p class="price" style="font-size: 30px;">&#8377;5000</p>
+    <p class="description">
+      Nike Shoes - Comfort Meets Performance<br>
+      Step into style and performance with Nike shoes,<br>
+      designed for all-day comfort and cutting-edge athletic support.
+    </p>
+  </div>
+
+  <!-- Duplicate for more products -->
+  <div class="col-4">
+    <img src="-original-imagudcghwwpcuu5.webp" alt="Nike Shoes">
+    <h4>Nike Shoes</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+    <p class="price"style="font-size: 30px;">&#8377;5000</p>
+    <p class="description">
+      Nike Shoes - Comfort Meets Performance<br>
+      Step into style and performance with Nike shoes,<br>
+      designed for all-day comfort and cutting-edge athletic support.
+    </p>
+  </div>
+  <div class="col-4">
+    <img src="-original-imagudcghwwpcuu5.webp" alt="Nike Shoes">
+    <h4>Nike Shoes</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+    <p class="price"style="font-size: 30px;">&#8377;5000</p>
+    <p class="description">
+      Nike Shoes - Comfort Meets Performance<br>
+      Step into style and performance with Nike shoes,<br>
+      designed for all-day comfort and cutting-edge athletic support.
+    </p>
+  </div>
+  <div class="col-4">
+    <img src="-original-imagudcghwwpcuu5.webp" alt="Nike Shoes">
+    <h4>Nike Shoes</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+    <p class="price"style="font-size: 30px; ">&#8377;5000</p>
+    <p class="description">
+      Nike Shoes - Comfort Meets Performance<br>
+      Step into style and performance with Nike shoes,<br>
+      designed for all-day comfort and cutting-edge athletic support.
+    </p>
+
+</div>
+  
+</div>
+<div>
+   <h2 class="title">
+     Latest Products
+   </h2>
+   <div class="row">
+  <!-- Product 1 -->
+  <div class="col-4">
+    <img src="ladys shirts.webp" alt="Ladys Shirts">
+    <h4>Ladys Shirts</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+      <p class="price" style="font-size: 30px;">&#8377;999</p>
+      
+    </div>
+  </div>
+
+  <!-- Product 2 -->
+  <div class="col-4">
+    <img src="ladys shirts.webp" alt="Ladys Shirts">
+    <h4>Ladys Shirts</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+  </div>
+
+  <!-- Product 3 -->
+  <div class="col-4">
+    <img src="ladys shirts.webp" alt="Ladys Shirts">
+    <h4>Ladys Shirts</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+  </div>
+
+  <!-- Product 4 -->
+  <div class="col-4">
+    <img src="ladys shirts.webp" alt="Ladys Shirts">
+    <h4>Ladys Shirts</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+  </div>
+</div>
+
+
+</main>
+<!--------offer--------->
+<div class="offer" style="height: 150vh;">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+
+                <img src="mn7.png"  class="offer-img" style="padding-right: 300px;
+                margin-bottom: 100px; width:800px; height: 900px;">
+            </div>
+            <div class="col-2" style="padding-left: 10pxpx; font-size: 50px;">
+                <P>Exclusively Available on Ganesh Store</P>
+                <div>
+                  <h1>ROLEX</h1>
+                <small style="font-size: 30px;height: 50vh;">
+                    The ROLEX Band 4 features a 39.9% larger (than ROLEX Band 3)
+                     DIAMOND COATTING BLUE POLLISHING DESIGN
+                     adjustable brightness, so everything is clear as can be.
+                    
+                </small><br>
+                <a href="" class="btn">Buy Now →</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--------------testimonial-------->
+<div style="color: white;">
+  <div class="testimonial" style="background-color: white;">
+  <div class="small-container">
+    <div class="row" style="padding-top: 50px;">
+
+      <!-- Testimonial Card 1 -->
+      <div class="mycall" >
+        <i class="fa fa-quote-left"></i>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <img src="my image ps2.jpg" alt="Reddy Ganesh">
+        <h3>REDDY GANESH</h3>
+      </div>
+
+      <!-- Testimonial Card 2 -->
+      <div class="mycall">
+        <i class="fa fa-quote-left"></i>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <img src="kiran ps22.jpg" alt="Reddy Kiran">
+        <h3>REDDY KIRAN</h3>
+      </div>
+
+      <!-- Testimonial Card 3 -->
+      <div class="mycall">
+        <i class="fa fa-quote-left"></i>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <img src="my image ps2.jpg" alt="Reddy Ganesh">
+        <h3>JAYAVEER CHANDRA</h3>
+      </div>
+
+      <!-- Testimonial Card 4 -->
+      <div class="mycall">
+        <i class="fa fa-quote-left"></i>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <img src="ps jagan.jpg" alt="Jagan">
+        <h3>CH.JAGAN</h3>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-------------brands-------------->
+<div class="brands" style="padding: 100px; background-color: white;">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-5">
+        <img src="ph 2.png" style="width: 130px;">
+      </div>
+       <div class="col-5">
+        <img src="1200px-Tesla_logo-removebg-preview.png" style="width: 100px;">
+      </div>
+       <div class="col-5">
+        <img src="bmw-removebg-preview.png" style="width: 100px;">
+      </div>
+       <div class="col-5">
+        <img src="godrej-.png">
+      </div>
+      <div class="col-5">
+        <img src="ph 1.png">
+      </div>
+      <div class="col-5">
+        <img src="apple_logo-removebg-preview.png">
+      </div>
+    </div>
+  </div>
+</div>
+
+  <a href="#header"><button class="fixed">↑</button></a>
+</div>
+<!----------fotter----->
+<div class="fotter">
+  <div class="container" style="height: 60vh;">
+    <div class="row">
+      <div class="fotter-col-1">
+        <h3> Download Our App</h3>
+        <p>Download App for Android and ios mobile phone</p>
+        <div class="app-logo">
+          <img src="images_apple-removebg-preview.png" style="padding-bottom: 40px;">
+          <img src="logo-thumbnail-removebg-preview (1).png">
+        </div>
+      </div>
+      <div class="fotter-col-2">
+        <img src="Photoroom footer-20250531_204411.png">
+        <p>Our Purpose Is To Sustainably Make the Pleasure and 
+          Benefits of Sports Accessible to the Many</p>
+      </div>
+      <div class="fotter-col-3">
+        <h3>Use Fll links</h3>
+        <ul>
+          <li>Coupons</li>
+          <li>BLOg Post</li>
+           <li>Return Policy</li>
+            <li>Join Affiliate</li>
+        </ul>
+      </div>
+      <div class="fotter-col-4">
+        <h3>Follow Us</h3>
+       <ul>
+  <li><a href="https://www.facebook.com/share/192Xn8nLer/"   style="color: aliceblue;">Facebook</a></li>
+  <li><a href="https://x.com/GundluruGa84356?t=jxwXvy9ue4MSeFgBUfZlIA&s=09"  style="color: aliceblue;">Twitter</a></li>
+  <li><a href="https://www.instagram.com/reddy__official_00/profilecard/?igsh=dTV0MzduaDJndTNr"  style="color: aliceblue;">Instagram</a></li>
+  <li><a href="http://www.youtube.com/@GRKTeluguFacts"  style="color: aliceblue;">YouTube</a></li>
+</ul>
+ 
+      </div>
+    </div>
+    
+   
+  </div>
+  <p class="copyright">Copyright 2025 - Easy toturials</p>
+</div>
+<!-----------js for toggle menu------------->
+<script>
+
+  var menuitems = document.getElementById("menuitems");
+  menuitems.style.maxHeight = "0px";
+
+  function menutoggle() {
+    if (menuitems.style.maxHeight === "0px") {
+      menuitems.style.maxHeight = "200px"; // set to your desired expanded height
+    } else {
+      menuitems.style.maxHeight = "0px";
+    }
+  }
+</script>
+
+</body>
+
+</html>    
+
+
+
+CSS
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.con {
+  max-width: 1800px;
+  margin: auto;
+  
+   
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.logo img {
+  width: 150px;
+  margin-left: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff523b;
+}
+
+.cart-icon {
+  width: 40px;
+  height: 40px;
+  margin-left: -150px;
+}
+
+.menu {
+  display: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  /* or 'space-between' based on your layout */
+  color: black;
+  flex-wrap: wrap;
+  gap: 100px; /* adds 10px spacing between flex items */
+}
+
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #ff523b;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #e14c36;
+}
+
+.hero-img img {
+  width: 100%;
+height: 100px;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.2));
+  margin-left: 10px;
+
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    display: none;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text,
+  .hero-img {
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+}
+/* Container */
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 5px 15px;
+    height: 100vh;
+    align-items: center;
+}
+
+/* Work Section */
+.work {
+    text-align: left;
+    padding-left: 50px;
+}
+.work-2 {
+    width: 100px;
+    height: 50px;
+    padding-right: 150px;
+    margin-left: 100px;
+}
+
+/* Row */
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    font-size: 30px;
+}
+
+/* Header Section */
+.header {
+    background: radial-gradient(#fff, #ffd6d6);
+}
+.header .row {
+    margin-top: 70px;
+}
+
+/* Column Layouts */
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img,
+.mycall img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.col-3 img:hover,
+.col-4 img:hover,
+.menu:hover {
+    transform: scale(1.05);
+}
+.col-4 {
+    flex: 1 1 25%;
+    min-width: 200px;
+    max-width: 25%;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: transform 0.5s;
+    font-size: 20px;
+}
+.col-4 img {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+/* Ratings, Price, Descriptions */
+.rating {
+    color: rgb(255, 102, 0);
+    margin: 10px 0;
+}
+.price {
+    color: green;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.description {
+    font-size: 0.9rem;
+    color: #333;
+}
+h4 {
+    color: #555;
+    font-weight: normal;
+}
+
+/* Categories Section */
+.categories {
+    margin: 50px 0;
+}
+
+/* Small Container */
+.small-container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+/* Title */
+.title {
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto 30px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after {
+    content: '';
+    background: #ff523b;
+    width: 180px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Image Box */
+.image-box img {
+    padding: 20px;
+    width: 300px;
+    max-width: 100%;
+}
+
+/* Span Styling */
+span {
+    padding-left: 500px;
+}
+span.para {
+    padding-top: 200px;
+    margin: 100px 0;
+}
+
+/* Offer Section */
+.offer {
+    background: radial-gradient(#fff, #fcd1d1);
+   
+    padding: 30px 0;
+   
+}
+.col-2.offer-img {
+    padding: 50px;
+  
+}
+small {
+    color: #555;
+}
+
+/* Mycall / Testimonial */
+.mycall {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    font-size: 12px;
+    margin: 12px;
+    color: #777;
+}
+.testimonial {
+    padding-top: 100px;
+}
+.testimonial .mycall {
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    font-size: 20px;
+}
+.testimonial .mycall:hover {
+    transform: translateY(-10px);
+}
+.testimonial .mycall img {
+    width: 90px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.testimonial .mycall h3 {
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+.fa.fa-quote-left {
+    font-size: 34px;
+    color: #ff523b;
+}
+
+/* Brands Section */
+.brands {
+    margin: 100px auto;
+}
+.col-5 {
+    width: 160px;
+}
+.col-5 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.col-5 img:hover {
+    filter: grayscale(0);
+}
+.fixed {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  height: 50px;
+  width: 50px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: #ea1f1f;
+  border-radius: 50%;
+  z-index: 1000;
+  transition: all 0.4s;
+}
+
+.fixed:hover {
+  background-color: #555;
+}
+
+/* Footer */
+.fotter {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+   
+    height: 70vh;
+        box-sizing: border-box;
+}
+.fotter p {
+    font-size: 20px;
+}
+.fotter h3 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.fotter-col-1, .fotter-col-2, .fotter-col-3, .fotter-col-4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.fotter-col-1 {
+    flex-basis: 30%;
+}
+.fotter-col-2 {
+    flex-basis: 30%;
+    text-align: center;
+}
+.fotter-col-2 img {
+    width: 180px;
+    margin-bottom: 20px;
+}
+.fotter-col-3, .fotter-col-4 {
+    flex-basis: 12%;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+}
+.app-logo {
+    margin-top: 20px;
+}
+.app-logo img {
+    width: 140px;
+}
+.fotter hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright {
+    text-align: center;
+}
+.menu {
+    width: 28px;
+  
+}
+
+
+/*-----------all product page-----------*/
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+select{
+    border : 1px solid #ff523b;
+    padding: 5px;
+}
+select:focus{
+    outline-color: #ea1f1f;
+}
+.page-btn{
+    margin: 0 auto 80px;
+    font-size: 25px;
+}
+.page-btn h3{
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.page-btn h3:hover{
+    background: #ff523b;
+    color: #fff;
+}
+/*------------single product----------*/
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  gap: 40px;
+}
+
+.image-section {
+  flex: 1;
+  text-align: center;
+}
+
+.main-image {
+  width: 100%;
+ width: 450px;
+ height: 500px;
+  border-radius: 5px;
+}
+
+.thumbnail-row {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.thumbnail {
+  width: 110px;
+  height: 130px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.5s; /* Fix: properly applied transition */
+}
+
+.thumbnail:hover {
+  transform: scale(1.05); /* Fix: added scale transform for hover effect */
+}
+
+.details-section {
+  flex: 1;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.size-dropdown {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.add-to-cart {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.add-to-cart input {
+  width: 60px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+
+
+.product-details h3 {
+  margin-bottom: 10px;
+}
+
+.product-details p {
+  color: #333;
+  line-height: 1.6;
+}
+
+.addbutton {
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px; /* match this with height for vertical centering */
+    font-weight: bold;
+    transition: background 0.5s;
+    margin-top: 5px;
+    text-decoration: none; /* useful if it's a link */
+    cursor: pointer; /* better user experience */
+}
+
+.addbutton:hover {
+    background-color: #e24c2c;
+}
+/* Extra Small Devices (Phones) */
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    display: none;
+    gap: 15px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .hero-img img {
+    height: auto;
+  }
+
+  .row, .col-4, .col-3, .col-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .fixed {
+    height: 40px;
+    width: 40px;
+  }
+
+  .add-to-cart {
+    flex-direction: column;
+  }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 481px) and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  .hero {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .container {
+    padding: 15px;
+    flex-direction: column;
+  }
+
+  .row {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .col-4, .col-3 {
+    max-width: 45%;
+  }
+}
+
+/* Medium Devices (Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+
+  .hero {
+    gap: 80px;
+  }
+
+  .col-4 {
+    max-width: 30%;
+  }
+
+  .container {
+    flex-direction: row;
+    padding: 20px;
+  }
+}
+
+/* Large Devices (Desktops & Gaming Laptops) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  html {
+    font-size: 17px;
+  }
+
+  .col-4 {
+    max-width: 25%;
+  }
+
+  .container {
+    padding: 20px 40px;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+  }
+}
+
+/* Extra Large Devices (4K & Gaming Displays) */
+@media (min-width: 1441px) {
+  html {
+    font-size: 18px;
+  }
+
+  .hero-text h1 {
+    font-size: 48px;
+  }
+
+  .container {
+    padding: 40px 60px;
+  }
+
+  .col-4 {
+    max-width: 20%;
+  }
+}
+

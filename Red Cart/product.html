@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Red Cart - A modern and responsive ecommerce website for shopping online.">
+  <title>All Products - Ganesh Store</title>
+  <link rel="stylesheet" href="product.css"> <!-- fixed typo: styel.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css">
+</head>
+<body>
+<header>
+<div class="container" style="height: 15vh;">
+        <div class="navbar">
+          <div class="logo">
+            <img src="GANESH_20250528_015651_0000-removebg-preview.png" width="100px"
+             height="150px" style="margin-left: -100px;">
+          </div>
+          <nav style="margin-left: 700px;">
+            <ul id="menuitems" style="text-size-adjust: 100px;">
+               <li><a href="redcart.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+            </ul>
+          </nav>
+         <a href="cart.html"> <img src="cart_png-removebg-preview.png"
+           style="width: 50px; height: 50px;" alt="Cart"></a>
+          <img src="pngtree-menu-vector-icon-png-image_3791388-removebg-preview.png" style="width: 50px; height: 50px;" class="menu" onclick="menutoggle()" alt="Menu Icon">
+        </div>
+      </div>
+</header>
+<main>
+ <div class="small-container">
+<div class="row row-2" style="gap: 10px; justify-content: right; 
+justify-content: space-between;
+    margin: 100px auto 50px;">
+<h3> All Products</h3>
+<select id="sort-select">
+  <option value="default">Default Shorting</option>
+  <option value="short by price">short by price</option>
+  <option value="short by rating">short by rating</option>
+</select>
+
+</div>
+
+
+
+    
+    <div class="row" id="product-list">
+      <div class="col-4" style="transition: transform 0.5s;">
+       <a href="product details.html"><img 
+      src="shirt 1.jpg" style="margin-top: -40;">
+      </a>
+    <h4>USPOLO Checks Shirt</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+    <p class="price" style="font-size: 30px;">&#8377;2,999</p>
+    <p class="description">
+     U.S. Polo Assn. check shirts blend timeless patterns with 
+     a modern fit. Crafted from soft, breathable cotton, they feature
+      classic button-down styling, chest logo embroidery, and are ideal
+       for smart-casual wear. Perfect for everyday comfort with a 
+       touch of elegance.
+    </p>
+      </div>
+
+      <!-- Duplicated products -->
+     <div class="col-4">
+    <a href="product details bear.html"><img src="bear 4.jpg" alt="Nike Shoes" style="height: 290px; margin-top: -5px;"></a>
+    <h4>THE BEAR HOUSE</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+    <p class="price"style="font-size: 30px;">&#8377;4,993</p>
+    <p class="description">
+     THE BEAR HOUSE Men's Checked Slim Fit Flannel Shirt is crafted
+      from premium soft cotton fabric with a stylish checked pattern.
+       Designed for comfort and durability, this shirt features a slim
+        fit cut, full sleeves, and a classic collar, making it perfect 
+        for casual outings or semi-formal occasions.
+
+
+    </p>
+  </div>
+
+      <div class="col-4">
+    <img src="mn5.jpg" alt="ROLEX WATCH" style="height: 300px; margin-top: -75px;">
+    <h4>ROLEX WATCH</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+    <p class="price"style="font-size: 30px;">&#8377;9,999</p>
+    <p class="description">
+      Nike Shoes - Comfort Meets Performance<br>
+      Step into style and performance with Nike shoes,<br>
+      designed for all-day comfort and cutting-edge athletic support.
+    </p>
+  </div>
+
+      <div class="col-4">
+    <img src="-original-imagudcghwwpcuu5.webp" alt="Nike Shoes" style="height: 300px;  width: 250px; margin-top: -70px;">
+    <h4>Nike Shoes</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+    <p class="price"style="font-size: 30px; ">&#8377;5000</p>
+    <p class="description">
+      Nike Shoes - Comfort Meets Performance<br>
+      Step into style and performance with Nike shoes,<br>
+      designed for all-day comfort and cutting-edge athletic support.
+    </p>
+
+</div>
+    </div>
+    <div class="row">
+  <div class="col-4" style="transition: transform 0.5s;">
+    <img src="-original-imagudcghwwpcuu5.webp" alt="Nike Shoes" style="margin-top: -40;">
+    <h4>Nike Shoes</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+    <p class="price" style="font-size: 30px;">&#8377;5000</p>
+    <p class="description">
+      Nike Shoes - Comfort Meets Performance<br>
+      Step into style and performance with Nike shoes,<br>
+      designed for all-day comfort and cutting-edge athletic support.
+    </p>
+  </div>
+
+  <!-- Duplicate for more products -->
+  <div class="col-4">
+    <img src="-original-imagudcghwwpcuu5.webp" alt="Nike Shoes">
+    <h4>Nike Shoes</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+    <p class="price"style="font-size: 30px;">&#8377;5000</p>
+    <p class="description">
+      Nike Shoes - Comfort Meets Performance<br>
+      Step into style and performance with Nike shoes,<br>
+      designed for all-day comfort and cutting-edge athletic support.
+    </p>
+  </div>
+  <div class="col-4">
+    <img src="-original-imagudcghwwpcuu5.webp" alt="Nike Shoes">
+    <h4>Nike Shoes</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+    <p class="price"style="font-size: 30px;">&#8377;5000</p>
+    <p class="description">
+      Nike Shoes - Comfort Meets Performance<br>
+      Step into style and performance with Nike shoes,<br>
+      designed for all-day comfort and cutting-edge athletic support.
+    </p>
+  </div>
+  <div class="col-4">
+    <img src="-original-imagudcghwwpcuu5.webp" alt="Nike Shoes">
+    <h4>Nike Shoes</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+    <p class="price"style="font-size: 30px;">&#8377;5000</p>
+    <p class="description">
+      Nike Shoes - Comfort Meets Performance<br>
+      Step into style and performance with Nike shoes,<br>
+      designed for all-day comfort and cutting-edge athletic support.
+    </p>
+
+</div>
+  
+</div>
+ <div class="row">
+  <div class="col-4" style="transition: transform 0.5s;">
+    <img src="-original-imagudcghwwpcuu5.webp" alt="Nike Shoes" style="margin-top: -40;">
+    <h4>Nike Shoes</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+    <p class="price" style="font-size: 30px;">&#8377;5000</p>
+    <p class="description">
+      Nike Shoes - Comfort Meets Performance<br>
+      Step into style and performance with Nike shoes,<br>
+      designed for all-day comfort and cutting-edge athletic support.
+    </p>
+  </div>
+
+  <!-- Duplicate for more products -->
+  <div class="col-4">
+    <img src="-original-imagudcghwwpcuu5.webp" alt="Nike Shoes">
+    <h4>Nike Shoes</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+    <p class="price"style="font-size: 30px;">&#8377;5000</p>
+    <p class="description">
+      Nike Shoes - Comfort Meets Performance<br>
+      Step into style and performance with Nike shoes,<br>
+      designed for all-day comfort and cutting-edge athletic support.
+    </p>
+  </div>
+  <div class="col-4">
+    <img src="-original-imagudcghwwpcuu5.webp" alt="Nike Shoes">
+    <h4>Nike Shoes</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+    <p class="price"style="font-size: 30px;">&#8377;5000</p>
+    <p class="description">
+      Nike Shoes - Comfort Meets Performance<br>
+      Step into style and performance with Nike shoes,<br>
+      designed for all-day comfort and cutting-edge athletic support.
+    </p>
+  </div>
+  <div class="col-4">
+    <img src="-original-imagudcghwwpcuu5.webp" alt="Nike Shoes">
+    <h4>Nike Shoes</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+    <p class="price"style="font-size: 30px;">&#8377;5000</p>
+    <p class="description">
+      Nike Shoes - Comfort Meets Performance<br>
+      Step into style and performance with Nike shoes,<br>
+      designed for all-day comfort and cutting-edge athletic support.
+    </p>
+
+</div>
+  
+</div>
+<div>   <h2 class="title">
+     Latest Products
+   </h2>
+   <div class="row">
+  <!-- Product 1 -->
+  <div class="col-4">
+    <img src="ladys shirts.webp" alt="Ladys Shirts">
+    <h4>Ladys Shirts</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+      <p class="price" style="font-size: 30px;">&#8377;999</p>
+      
+    </div>
+  </div>
+
+  <!-- Product 2 -->
+  <div class="col-4">
+    <img src="ladys shirts.webp" alt="Ladys Shirts">
+    <h4>Ladys Shirts</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+  </div>
+
+  <!-- Product 3 -->
+  <div class="col-4">
+    <img src="ladys shirts.webp" alt="Ladys Shirts">
+    <h4>Ladys Shirts</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+  </div>
+
+  <!-- Product 4 -->
+  <div class="col-4">
+    <img src="ladys shirts.webp" alt="Ladys Shirts">
+    <h4>Ladys Shirts</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+  </div>
+</div>
+</div>
+<div class="page-btn">
+<h3>1</h3>
+<h3>2</h3>
+<h3>3</h3>
+<h3>4</h3>
+<h3>&#8594;</h3>
+    
+
+</div>
+</div>
+  </div>
+
+</main>
+
+
+  <!-- Footer -->
+  <div class="fotter">
+  <div class="container" style="height: 60vh;">
+    <div class="row">
+      <div class="fotter-col-1">
+        <h3> Download Our App</h3>
+        <p>Download App for Android and ios mobile phone</p>
+        <div class="app-logo">
+          <img src="images_apple-removebg-preview.png" style="padding-bottom: 40px;">
+          <img src="logo-thumbnail-removebg-preview (1).png">
+        </div>
+      </div>
+      <div class="fotter-col-2">
+        <img src="Photoroom footer-20250531_204411.png">
+        <p>Our Purpose Is To Sustainably Make the Pleasure and 
+          Benefits of Sports Accessible to the Many</p>
+      </div>
+      <div class="fotter-col-3">
+        <h3>Use Fll links</h3>
+        <ul>
+          <li>Coupons</li>
+          <li>BLOg Post</li>
+           <li>Return Policy</li>
+            <li>Join Affiliate</li>
+        </ul>
+      </div>
+      <div class="fotter-col-4">
+        <h3>Follow Us</h3>
+       <ul>
+  <li><a href="https://www.facebook.com/share/192Xn8nLer/"   style="color: aliceblue;">Facebook</a></li>
+  <li><a href="https://x.com/GundluruGa84356?t=jxwXvy9ue4MSeFgBUfZlIA&s=09"  style="color: aliceblue;">Twitter</a></li>
+  <li><a href="https://www.instagram.com/reddy__official_00/profilecard/?igsh=dTV0MzduaDJndTNr"  style="color: aliceblue;">Instagram</a></li>
+  <li><a href="http://www.youtube.com/@GRKTeluguFacts"  style="color: aliceblue;">YouTube</a></li>
+</ul>
+ 
+      </div>
+    </div>
+    
+   
+  </div>
+  <p class="copyright">Copyright 2025 - Easy toturials</p>
+</div>
+  <!-- JS for toggle menu -->
+<script>
+  document.getElementById("sort-select").addEventListener("change", function () {
+    const selected = this.value;
+    const productList = document.getElementById("product-list");
+    const products = Array.from(productList.getElementsByClassName("col-4"));
+
+    const extractPrice = (element) => {
+      const priceText = element.querySelector(".price")?.innerText || "₹0";
+      return parseFloat(priceText.replace(/[^\d.]/g, ""));
+    };
+
+    const extractRating = (element) => {
+      return element.querySelectorAll(".fa-star").length +
+             0.5 * element.querySelectorAll(".fa-star-half-stroke").length;
+    };
+
+    if (selected === "short by price") {
+      products.sort((a, b) => extractPrice(a) - extractPrice(b));
+    } else if (selected === "short by rating") {
+      products.sort((a, b) => extractRating(b) - extractRating(a));
+    } else {
+      location.reload(); // Reset to default (reloads the page)
+      return;
+    }
+
+    // Clear existing products and re-append in sorted order
+    productList.innerHTML = "";
+    products.forEach((product) => {
+      productList.appendChild(product);
+    });
+  });
+</script>
+
+
+</body>
+</html>

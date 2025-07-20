@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Red Cart - A modern and responsive ecommerce website for shopping online.">
+  <title>Red Cart Ecommerce Website Design</title>
+  <link rel="stylesheet" href="styel.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css">
+ <!-- 1. Bootstrap CSS -->
+
+</head>
+
+<body>
+
+<header >
+  <!-- Your header content here -->
+
+ <div class="con" style=" background: radial-gradient(#fff, #fcd1d1);">
+      <div class="navbar">
+        <div class="logo">
+          <img src="GANESH_20250528_015651_0000-removebg-preview.png" alt="RedStore Logo" />
+        </div>
+        <nav style="margin-left: 400px;">
+          <ul id="menuitems">
+            <li><a href="redcart.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html"><img src="cart_png-removebg-preview.png" class="cart-icon" alt="Cart" /></a>
+        <img src="menu-removebg-preview.png" class="menu" onclick="menutoggle()" alt="Menu" />
+        <img src="">
+      </div>
+    
+    <section class="hero" style="height: 95vh;">
+      <div class="hero-text">
+        <h1 style="margin-left: 100px;">Give Your Workout<br>A New Style!</h1>
+        <p style="margin-left: 100px;">
+          Success isn't always about greatness. It's about consistency.
+          Consistent hard work gains success. Greatness will come.
+        </p>
+        <a href="" class="btn" style="margin-left: 100px;">Explore Now →</a>
+      </div>
+      <div class="hero-img">
+        <img src="pt 1.png" 
+        style="width: 600px; height: 500px; margin-left: -80px; margin-bottom: 100px;">
+      </div>
+    </section>
+  </div>
+
+    </header>
+
+
+
+<main style="background-color: rgb(255, 255, 255);">
+
+
+<div class="carousel" id="heroCarousel">
+
+  <!-- Indicators (will be auto-generated) -->
+  <div class="carousel-indicators"></div>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="hero 1.webp" style="height: 300px;">
+    </div>
+    <div class="carousel-item">
+      <img src="hero 2.webp"   style="height: 400px;"alt="Slide 2">
+    </div>
+    <div class="carousel-item">
+      <img src="hero 3.webp"   style="height: 400px;"alt="Slide 3">
+    </div>
+    <div class="carousel-item">
+      <img src="hero 4.webp" style="height: 400px;" alt="Slide 4">
+    </div>
+    <div class="carousel-item">
+      <img src="hero 2.webp"   style="height: 400px;" alt="Slide 5">
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev">&#10094;</button>
+  <button class="carousel-control-next">&#10095;</button>
+</div>
+
+<!-- ✅ Carousel Functionality -->
+<script>
+  const carousel = document.getElementById("heroCarousel");
+  const items = carousel.querySelectorAll(".carousel-item");
+  const indicatorContainer = carousel.querySelector(".carousel-indicators");
+  const prevBtn = carousel.querySelector(".carousel-control-prev");
+  const nextBtn = carousel.querySelector(".carousel-control-next");
+
+  let current = 0;
+
+  // Auto-generate indicators
+  items.forEach((_, index) => {
+    const btn = document.createElement("button");
+    btn.dataset.slide = index;
+    if (index === 0) btn.classList.add("active");
+    indicatorContainer.appendChild(btn);
+  });
+
+  const indicators = carousel.querySelectorAll(".carousel-indicators button");
+
+  function showSlide(index) {
+    items.forEach((item, i) => {
+      item.classList.toggle("active", i === index);
+      indicators[i].classList.toggle("active", i === index);
+    });
+    current = index;
+  }
+
+  nextBtn.addEventListener("click", () => {
+    let next = (current + 1) % items.length;
+    showSlide(next);
+  });
+
+  prevBtn.addEventListener("click", () => {
+    let prev = (current - 1 + items.length) % items.length;
+    showSlide(prev);
+  });
+
+  indicators.forEach((btn, i) => {
+    btn.addEventListener("click", () => showSlide(i));
+  });
+
+  // Auto-slide every 5 seconds
+  setInterval(() => {
+    let next = (current + 1) % items.length;
+    showSlide(next);
+  }, 5000);
+</script>
+
+
+ <!------ feature categories ------>
+ <div class="categories">
+    <div class="small-container">
+        <div class="row" style="background-color: white;">
+            <div class="col-3">
+                <img src="t shirt 2 jpeg.jpeg" alt="T-Shirt 2">
+            </div>
+            <div class="col-3">
+                <img src="t shirt 1.jpeg" alt="T-Shirt 1">
+            </div>
+            <div class="col-3">
+                <img src="t shirt 3.jpeg" alt="T-Shirt 3">
+            </div>
+            <div class="col-3">
+                <img src="THECLOTHINGFACTORY-09-02-249595_1667x.webp" style="height: 280px;">
+            </div>
+        </div>
+    </div>
+</div>
+<!-----feature products------>
+<div class="small-container">
+    <h1  class="title">Feature Products</h1>
+
+<div class="row">
+  <div class="col-4" style="transition: transform 0.5s;">
+    <a href="product details.html"><img 
+      src="shirt 1.jpg" style="margin-top: -40;">
+      </a>
+    <h4>USPOLO Checks Shirt</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+    <p class="price" style="font-size: 30px;">&#8377;2,999</p>
+    <p class="description">
+     U.S. Polo Assn. check shirts blend timeless patterns with 
+     a modern fit. Crafted from soft, breathable cotton, they feature
+      classic button-down styling, chest logo embroidery, and are ideal
+       for smart-casual wear. Perfect for everyday comfort with a 
+       touch of elegance.
+    </p>
+  </div>
+
+  <!-- Duplicate for more products -->
+  <div class="col-4">
+    <a href="product details bear.html"><img src="bear 4.jpg" alt="Nike Shoes" style="height: 290px; margin-top: -5px;"></a>
+    <h4>THE BEAR HOUSE</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+    <p class="price"style="font-size: 30px;">&#8377;4,993</p>
+    <p class="description">
+     THE BEAR HOUSE Men's Checked Slim Fit Flannel Shirt is crafted
+      from premium soft cotton fabric with a stylish checked pattern.
+       Designed for comfort and durability, this shirt features a slim
+        fit cut, full sleeves, and a classic collar, making it perfect 
+        for casual outings or semi-formal occasions.
+
+
+    </p>
+  </div>
+  <div class="col-4">
+    <img src="mn5.jpg" alt="ROLEX WATCH" style="height: 300px; margin-top: -75px;">
+    <h4>ROLEX WATCH</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+    <p class="price"style="font-size: 30px;">&#8377;5000</p>
+    <p class="description">
+      Nike Shoes - Comfort Meets Performance<br>
+      Step into style and performance with Nike shoes,<br>
+      designed for all-day comfort and cutting-edge athletic support.
+    </p>
+  </div>
+  <div class="col-4">
+    <img src="-original-imagudcghwwpcuu5.webp" alt="Nike Shoes" style="height: 300px;  width: 250px; margin-top: -70px;">
+    <h4>Nike Shoes</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+    <p class="price"style="font-size: 30px; ">&#8377;5000</p>
+    <p class="description">
+      Nike Shoes - Comfort Meets Performance<br>
+      Step into style and performance with Nike shoes,<br>
+      designed for all-day comfort and cutting-edge athletic support.
+    </p>
+
+</div>
+  
+</div>
+<div>
+   <h2 class="title">
+     Latest Products
+   </h2>
+   <div class="row">
+  <!-- Product 1 -->
+  <div class="col-4">
+    <img src="ladys shirts.webp" alt="Ladys Shirts">
+    <h4>Ladys Shirts</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+      <p class="price" style="font-size: 30px;">&#8377;999</p>
+      
+    </div>
+  </div>
+
+  <!-- Product 2 -->
+  <div class="col-4">
+    <img src="ladys shirts.webp" alt="Ladys Shirts">
+    <h4>Ladys Shirts</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+  </div>
+
+  <!-- Product 3 -->
+  <div class="col-4">
+    <img src="ladys shirts.webp" alt="Ladys Shirts">
+    <h4>Ladys Shirts</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+  </div>
+
+  <!-- Product 4 -->
+  <div class="col-4">
+    <img src="ladys shirts.webp" alt="Ladys Shirts">
+    <h4>Ladys Shirts</h4>
+    <div class="rating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+  </div>
+</div>
+
+
+</main>
+<!--------offer--------->
+<div class="offer" style="height: 120vh;">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+
+                <img src="mn7.png"  class="offer-img" style="padding-right: 300px;
+                margin-bottom: 100px; width:800px; height: 900px;">
+            </div>
+            <div class="col-2" style="padding-left: 10pxpx; font-size: 50px;">
+                <P>Exclusively Available on Ganesh Store</P>
+                <div>
+                  <h1>ROLEX</h1>
+                <small style="font-size: 30px;height: 50vh;">
+                    The ROLEX Band 4 features a 39.9% larger (than ROLEX Band 3)
+                     DIAMOND COATTING BLUE POLLISHING DESIGN
+                     adjustable brightness, so everything is clear as can be.
+                    
+                </small><br>
+                <a href="rolexbuy.html" class="btn">Buy Now →</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--------------testimonial-------->
+<div style="color: white;">
+  <div class="testimonial" style="background-color: white;">
+  <div class="small-container">
+    <div class="row" style="padding-top: 50px;">
+
+      <!-- Testimonial Card 1 -->
+      <div class="mycall" >
+        <i class="fa fa-quote-left"></i>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <img src="my image ps2.jpg" alt="Reddy Ganesh">
+        <h3>REDDY GANESH</h3>
+      </div>
+
+      <!-- Testimonial Card 2 -->
+      <div class="mycall">
+        <i class="fa fa-quote-left"></i>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <img src="kiran ps22.jpg" alt="Reddy Kiran">
+        <h3>REDDY KIRAN</h3>
+      </div>
+
+      <!-- Testimonial Card 3 -->
+      <div class="mycall">
+        <i class="fa fa-quote-left"></i>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <img src="my image ps2.jpg" alt="Reddy Ganesh">
+        <h3>JAYAVEER CHANDRA</h3>
+      </div>
+
+      <!-- Testimonial Card 4 -->
+      <div class="mycall">
+        <i class="fa fa-quote-left"></i>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <img src="ps jagan.jpg" alt="Jagan">
+        <h3>CH.JAGAN</h3>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-------------brands-------------->
+<div class="brands" style="padding: 100px; background-color: white;">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-5">
+        <img src="ph 2.png" style="width: 130px;">
+      </div>
+       <div class="col-5">
+        <img src="1200px-Tesla_logo-removebg-preview.png" style="width: 100px;">
+      </div>
+       <div class="col-5">
+        <img src="bmw-removebg-preview.png" style="width: 100px;">
+      </div>
+       <div class="col-5">
+        <img src="godrej-.png">
+      </div>
+      <div class="col-5">
+        <img src="ph 1.png">
+      </div>
+      <div class="col-5">
+        <img src="apple_logo-removebg-preview.png">
+      </div>
+    </div>
+  </div>
+</div>
+
+  <a href="redcart.html"><button class="fixed">↑</button></a>
+</div>
+<!----------fotter----->
+<div class="fotter" style="font-family: 'Arial', sans-serif">
+  <div class="container" style="height: 60vh;">
+    <div class="row">
+      <div class="fotter-col-1">
+        <h3> Download Our App</h3>
+        <p>Download App for Android and ios mobile phone</p>
+        <div class="app-logo">
+          <img src="images_apple-removebg-preview.png" style="padding-bottom: 40px;">
+          <img src="logo-thumbnail-removebg-preview (1).png">
+        </div>
+      </div>
+      <div class="fotter-col-2">
+        <img src="Photoroom footer-20250531_204411.png">
+        <p>Our Purpose Is To Sustainably Make the Pleasure and 
+          Benefits of Sports Accessible to the Many</p>
+      </div>
+      <div class="fotter-col-3">
+        <h3>Use Fll links</h3>
+        <ul>
+          <li>Coupons</li>
+          <li>BLOg Post</li>
+           <li>Return Policy</li>
+            <li>Join Affiliate</li>
+        </ul>
+      </div>
+      <div class="fotter-col-4">
+        <h3>Follow Us</h3>
+       <ul>
+  <li><a href="https://www.facebook.com/share/192Xn8nLer/"   style="color: aliceblue;">Facebook</a></li>
+  <li><a href="https://x.com/GundluruGa84356?t=jxwXvy9ue4MSeFgBUfZlIA&s=09"  style="color: aliceblue;">Twitter</a></li>
+  <li><a href="https://www.instagram.com/reddy__official_00/profilecard/?igsh=dTV0MzduaDJndTNr"  style="color: aliceblue;">Instagram</a></li>
+  <li><a href="http://www.youtube.com/@GRKTeluguFacts"  style="color: aliceblue;">YouTube</a></li>
+</ul>
+ 
+      </div>
+    </div>
+    
+   
+  </div>
+  <p class="copyright">Copyright 2025 - Easy toturials</p>
+</div>
+<!-----------js for toggle menu------------->
+<script>
+
+  var menuitems = document.getElementById("menuitems");
+  menuitems.style.maxHeight = "0px";
+
+  function menutoggle() {
+    if (menuitems.style.maxHeight === "0px") {
+      menuitems.style.maxHeight = "200px"; // set to your desired expanded height
+    } else {
+      menuitems.style.maxHeight = "0px";
+    }
+  }
+</script>
+
+</body>
+
+</html>    

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Red Cart - A modern and responsive ecommerce website for shopping online.">
+  <title>All Products - Ganesh Store</title>
+  <link rel="stylesheet" href="product details bear.css"> <!-- fixed typo: styel.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css">
+</head>
+
+<body>
+<header>
+<div class="container" style="height: 15vh;">
+        <div class="navbar">
+          <div class="logo">
+            <img src="GANESH_20250528_015651_0000-removebg-preview.png
+            " width="100px"
+             height="150px" style="margin-left: -100px; margin-bottom: -30px;">
+          </div>
+          <nav style="margin-left: 700px; margin-bottom: 50px;">
+            <ul id="menuitems" style="text-size-adjust: 100px;">
+              <li><a href="redcart.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html"><img src="cart_png-removebg-preview.png"
+           style="width: 50px; height: 50px; margin-bottom: 50px;" alt="Cart"></a>
+          <img src="pngtree-menu-vector-icon-png-image_3791388-removebg-preview.png" style="width: 50px; height: 50px;" class="menu" onclick="menutoggle()" alt="Menu Icon">
+        </div>
+      </div>
+</header>
+<main>
+    <!----------------single product details------->
+  <div class="container">
+  <div class="image-section">
+    <img src="bear 4.jpg" class="product" id="main-img">
+    <div class="thumbnail-row">
+      <img src="bear 1.jpg" class="small-img">
+      <img src="bear 2.jpg" class="small-img">
+      <img src="bear 5.jpg" class="small-img">
+      <img src="bear 3.jpg" class="small-img">
+    </div>
+  </div>
+
+  <div class="details-section">
+    <h1 id="product-name" style="font-size: 40px;">U.S. Polo Assn. Checks Shirt</h1>
+    <p id="product-price" class="price">₹2,999</p>
+
+    <select id="product-size" class="size-dropdown">
+      <option>Select Size</option>
+      <option>Small</option>
+      <option>Medium</option>
+      <option>Large</option>
+      <option>X-Large</option>
+    </select>
+
+    <div class="add-to-cart">
+      <input id="product-qty" type="number" value="1" min="1">
+     
+
+    </div>
+    <div class="add-to-cart">
+ <button class="addbutton" id="add-to-cart-button">Add To Cart</button>
+  <button class="addbutton" id="add-to-cart-button">Buy Now</button>
+ 
+    </div>
+
+    <div class="product-details">
+      <h3 style="font-size: 30px;">Product Details</h3>
+      <p style="font-size: 25px;">
+        U.S. Polo Assn. Men's Shirt, crafted for those who value both sophistication and comfort.
+        Made from premium-quality cotton, this shirt delivers a breathable and soft feel,
+        making it perfect for both casual outings and semi-formal events.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Related Section -->
+<div class="small-container">
+  <div class="row-2">
+    <h2>Related product</h2>
+    <a href="product.html"><p class="view-more">View more</p></a>
+  </div>
+</div>
+
+<!-- JavaScript to handle Add to Cart -->
+<script>
+ 
+
+  
+
+
+
+
+
+
+
+
+
+
+ 
+  const mainImg = document.getElementById("main-img");
+  const thumbnails = document.querySelectorAll(".small-img");
+
+  thumbnails.forEach(img => {
+    
+    img.addEventListener("click", () => {
+      mainImg.src = img.src;
+    });
+  });
+
+  function addToCart() {
+    const size = document.getElementById("product-size").value;
+    const qty = document.getElementById("product-qty").value;
+    if (size === "Select Size" || !size) {
+      alert("Please select a size before adding to cart.");
+      return;
+    }
+    alert(`Added ${qty} item(s) of size ${size} to cart!`);
+  }
+
+</script>
+
+<!-----------product----------->
+ <div class="small-container">
+    <div class="row">
+      <div class="col-4" style="transition: transform 0.5s;">
+        <img src="-original-imagudcghwwpcuu5.webp" alt="Nike Shoes" style="margin-top: -40;">
+        <h4>Nike Shoes</h4>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <p class="price" style="font-size: 30px;">&#8377;5000</p>
+        <p class="description">
+          Nike Shoes - Comfort Meets Performance<br>
+          Step into style and performance with Nike shoes,<br>
+          designed for all-day comfort and cutting-edge athletic support.
+        </p>
+      </div>
+
+      <!-- Duplicated products -->
+      <div class="col-4">
+        <img src="-original-imagudcghwwpcuu5.webp" alt="Nike Shoes">
+        <h4>Nike Shoes</h4>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <p class="price" style="font-size: 30px;">&#8377;5000</p>
+        <p class="description">
+          Nike Shoes - Comfort Meets Performance<br>
+          Step into style and performance with Nike shoes,<br>
+          designed for all-day comfort and cutting-edge athletic support.
+        </p>
+      </div>
+
+      <div class="col-4">
+        <img src="-original-imagudcghwwpcuu5.webp" alt="Nike Shoes">
+        <h4>Nike Shoes</h4>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <p class="price" style="font-size: 30px;">&#8377;5000</p>
+        <p class="description">
+          Nike Shoes - Comfort Meets Performance<br>
+          Step into style and performance with Nike shoes,<br>
+          designed for all-day comfort and cutting-edge athletic support.
+        </p>
+      </div>
+
+      <div class="col-4">
+        <img src="-original-imagudcghwwpcuu5.webp" alt="Nike Shoes">
+        <h4>Nike Shoes</h4>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <p class="price" style="font-size: 30px;">&#8377;5000</p>
+        <p class="description">
+          Nike Shoes - Comfort Meets Performance<br>
+          Step into style and performance with Nike shoes,<br>
+          designed for all-day comfort and cutting-edge athletic support.
+        </p>
+      </div>
+    </div>
+    
+  </div>
+</main>
+
+
+  <!-- Footer -->
+<div class="fotter">
+  <div class="container" style="height: 60vh;">
+    <div class="row">
+      <div class="fotter-col-1">
+        <h3> Download Our App</h3>
+        <p>Download App for Android and ios mobile phone</p>
+        <div class="app-logo">
+          <img src="images_apple-removebg-preview.png" style="padding-bottom: 40px;">
+          <img src="logo-thumbnail-removebg-preview (1).png">
+        </div>
+      </div>
+      <div class="fotter-col-2">
+        <img src="Photoroom footer-20250531_204411.png">
+        <p>Our Purpose Is To Sustainably Make the Pleasure and 
+          Benefits of Sports Accessible to the Many</p>
+      </div>
+      <div class="fotter-col-3">
+        <h3>Use Fll links</h3>
+        <ul>
+          <li>Coupons</li>
+          <li>BLOg Post</li>
+           <li>Return Policy</li>
+            <li>Join Affiliate</li>
+        </ul>
+      </div>
+      <div class="fotter-col-4">
+        <h3>Follow Us</h3>
+       <ul>
+  <li><a href="https://www.facebook.com/share/192Xn8nLer/"   style="color: aliceblue;">Facebook</a></li>
+  <li><a href="https://x.com/GundluruGa84356?t=jxwXvy9ue4MSeFgBUfZlIA&s=09"  style="color: aliceblue;">Twitter</a></li>
+  <li><a href="https://www.instagram.com/reddy__official_00/profilecard/?igsh=dTV0MzduaDJndTNr"  style="color: aliceblue;">Instagram</a></li>
+  <li><a href="http://www.youtube.com/@GRKTeluguFacts"  style="color: aliceblue;">YouTube</a></li>
+</ul>
+ 
+      </div>
+    </div>
+    
+   
+  </div>
+  <p class="copyright">Copyright 2025 - Easy toturials</p>
+</div>
+
+  
+  <!-- JS for toggle menu -->
+ <!-- Your product size dropdown and quantity input -->
+
+
+<script>
+  // Helper to parse price string like "₹2,999" to number 2999
+  function parseRupeePrice(str) {
+    return parseFloat(str.replace("₹", "").replace(/,/g, "").trim()) || 0;
+  }
+
+  // Main addToCart function
+  function addToCart() {
+    const nameElem = document.getElementById("product-name");
+    const priceElem = document.getElementById("product-price");
+    const sizeElem = document.getElementById("product-size");
+    const qtyElem = document.getElementById("product-qty");
+    const imgElem = document.getElementById("main-img");
+
+    const productName = nameElem ? nameElem.textContent.trim() : "";
+    const rawPrice = priceElem ? priceElem.textContent : "₹0";
+    const productPrice = parseRupeePrice(rawPrice);
+    const productSize = sizeElem ? sizeElem.value : "";
+    const productQty = qtyElem ? parseInt(qtyElem.value, 10) || 1 : 1;
+    const productImage = imgElem ? imgElem.src : "";
+
+    if (!productSize || productSize === "Select Size") {
+      alert("Please select a size before adding to cart.");
+      sizeElem.focus();
+      return;
+    }
+
+    const newItem = {
+      name: productName,
+      price: productPrice,
+      size: productSize,
+      qty: productQty,
+      image: productImage
+    };
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    const existingIndex = cart.findIndex(item => item.name === newItem.name && item.size === newItem.size);
+
+    if (existingIndex > -1) {
+      cart[existingIndex].qty += newItem.qty;
+    } else {
+      cart.push(newItem);
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    // Redirect to cart page
+    window.location.href = "cart.html";
+  }
+
+  // Attach event listener on DOM content loaded
+  window.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("add-to-cart-button");
+    if (btn) btn.addEventListener("click", addToCart);
+
+    // Image thumbnail swap
+    const mainImg = document.getElementById("main-img");
+    const thumbnails = document.querySelectorAll(".small-img");
+    thumbnails.forEach(thumb => {
+      thumb.addEventListener("click", () => {
+        mainImg.src = thumb.src;
+      });
+    });
+  });
+
+  // Menu toggle logic
+  const menuitems = document.getElementById("menuitems");
+  menuitems.style.maxHeight = "0px";
+
+  function menutoggle() {
+    if (menuitems.style.maxHeight === "0px") {
+      menuitems.style.maxHeight = "200px";
+    } else {
+      menuitems.style.maxHeight = "0px";
+    }
+  }
+</script>
+
+</body>
+</html>
